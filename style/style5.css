@@ -104,3 +104,9 @@ body{
 }
 
 
+@media(max-width:450px){
+
+    nav{
+        display: none;
+    }
+}
