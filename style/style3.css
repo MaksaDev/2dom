@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right ,rgb(41, 36, 54),rgb(19, 19, 20));
+    
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+  
+    margin: 0;
+    position: relative;
+
+}   
+.button {
+    position: absolute;
+    background-color: #fdfdfd; 
+    border: none;
+    border-radius: 10px;
+    color: rgb(177, 83, 39);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    top: 60px;
+    right: 140px;
+  }
+  .button:focus {
+      outline: none;
+  }
+  .button:active{
+      transform: scale(0.9);
+
+  }
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 140px;
+    font-size: 5rem;
+    text-shadow: 10px 10px 10px black;
+    border-radius: 5px;
+    
+}
+
+.fa {
+    padding-right: 3px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+  }
+
+.container {
+    background: url('../sh/sh4.jpg');
+
+    padding: 20px 40px;
+    border-radius: 6px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 10px 10px black;
+    margin: 130px 40px 200px 40px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+} 
+
+.container a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+
+.btn {
+    width: 100%;
+    cursor: pointer;
+    display: inline;
+    background-color: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+}
+
+
+.btn:active{
+    transform: scale(0.95);
+}
+.text{
+    margin-top: 30px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px white solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 17px;
+    color: #fff;
+
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+
+}
+
+.form-control label {
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+@media (max-width: 650px){
+
+    .logo{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .container{
+        width: 90vw;
+    }
+    .form-control{
+        width: 150px;
+    }
+}
+@media(max-height:400px) {
+
+    .logo{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .container{
+        width: 90vw;
+    }
+   
+}
